@@ -8,10 +8,10 @@ import DeviceScreen from "./DeviceScreen.vue";
     <h1 class="different">Or star it on GitHub</h1>
   </div>
   <div class="section-screenshot">
-    <a href="https://github.com/HarshNarayanJha/Insta-Solve" target="_blank"
+    <a href="https://github.com/HarshNarayanJha/Insta-Solve" target="_blank" aria-label="GitHub Repo of Insta Solve"
       ><img class="dark" src="/src/assets/icons/github-mark-white.png" alt="appicon"
     /></a>
-    <a href="https://github.com/HarshNarayanJha/Insta-Solve" target="_blank"
+    <a href="https://github.com/HarshNarayanJha/Insta-Solve" target="_blank" aria-label="GitHub Repo of Insta Solve"
       ><img class="light" src="/src/assets/icons/github-mark.png" alt="appicon"
     /></a>
   </div>
@@ -42,6 +42,11 @@ import DeviceScreen from "./DeviceScreen.vue";
 .section-screenshot {
   display: flex;
   justify-content: center;
+
+  a {
+    margin: 10px;
+    padding: 0 10px;
+  }
 
   img {
     max-width: 100px;

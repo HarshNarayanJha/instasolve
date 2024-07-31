@@ -1,9 +1,13 @@
 <script setup>
 const props = defineProps(["image", "width", "height", "light", "dark"]);
+
+function imgUrl(name) {
+  return new URL(`/src/assets/images/${name}`, import.meta.url).href;
+}
 </script>
 
 <template>
-  <img :src="`src/assets/images/${image}`" alt="screenshot" draggable="false" />
+  <img :src="imgUrl(image)" alt="screenshot" draggable="false" rel="preload" fetchpriority="high" as="image" />
 </template>
 
 <style scoped>

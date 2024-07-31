@@ -49,7 +49,7 @@ nav {
   }
 
   span.first {
-    background-color: var(--c-green);
+    background-color: var(--c-green-dark);
     font-weight: 900;
     font-family: "Baloo 2";
     color: #fff;
