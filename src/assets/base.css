@@ -1,24 +1,28 @@
 /* color palette from <https://github.com/vuejs/theme> */
 :root {
   --c-white: #ffffff;
-  --c-white-soft: #f8f8f8;
-  --c-white-mute: #f2f2f2;
+  --c-white-soft: #f0f0f0;
+  --c-white-mute: #cfcfcf;
 
-  --c-black: #181818;
+  --c-black: #080808;
   --c-black-soft: #222222;
   --c-black-mute: #282828;
 
-  --c-indigo: #2c3e50;
+  /* Brand Green */
+  --c-green: #118d56;
+  --c-green-dark: #0f6b42;
 
   --c-divider-light-1: rgba(60, 60, 60, 0.29);
   --c-divider-light-2: rgba(60, 60, 60, 0.12);
   --c-divider-dark-1: rgba(84, 84, 84, 0.65);
   --c-divider-dark-2: rgba(84, 84, 84, 0.48);
 
-  --c-text-light-1: var(--c-indigo);
-  --c-text-light-2: rgba(60, 60, 60, 0.66);
+  --c-text-light-1: var(--c-green);
+  --c-text-light-2: rgba(60, 60, 60, 0.9);
+  --c-text-light-3: rgba(25, 25, 25, 0.7);
   --c-text-dark-1: var(--c-white);
-  --c-text-dark-2: rgba(235, 235, 235, 0.64);
+  --c-text-dark-2: rgba(235, 235, 235, 0.9);
+  --c-text-dark-3: rgba(250, 250, 250, 0.7);
 }
 
 /* semantic color variables for this project */
@@ -31,9 +35,8 @@
   --color-border-hover: var(--c-divider-light-1);
 
   --color-heading: var(--c-text-light-1);
-  --color-text: var(--c-text-light-1);
-
-  --section-gap: 160px;
+  --color-text: var(--c-text-light-2);
+  --color-different: var(--c-text-light-3);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -47,6 +50,7 @@
 
     --color-heading: var(--c-text-dark-1);
     --color-text: var(--c-text-dark-2);
+    --color-different: var(--c-text-dark-3);
   }
 }
 
@@ -55,6 +59,7 @@
 *::after {
   box-sizing: border-box;
   margin: 0;
+  padding: 0;
   font-weight: normal;
 }
 
@@ -67,7 +72,7 @@ body {
     background-color 0.5s;
   line-height: 1.6;
   font-family:
-    Inter,
+    "Roboto",
     -apple-system,
     BlinkMacSystemFont,
     "Segoe UI",
@@ -79,7 +84,34 @@ body {
     "Droid Sans",
     "Helvetica Neue",
     sans-serif;
-  font-size: 15px;
+  font-size: 1rem;
+  font-optical-sizing: auto;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--color-heading);
+  font-family:
+    "Baloo 2",
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    Roboto,
+    Oxygen,
+    Ubuntu,
+    Cantarell,
+    "Fira Sans",
+    "Droid Sans",
+    "Helvetica Neue",
+    sans-serif;
+  font-optical-sizing: auto;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;

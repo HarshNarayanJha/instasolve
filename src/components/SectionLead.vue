@@ -1,0 +1,48 @@
+<script setup>
+import AppIcon from "./AppIcon.vue";
+import DeviceScreen from "./DeviceScreen.vue";
+</script>
+
+<template>
+  <div class="lead-section-text">
+    <AppIcon />
+    <h1>Insta Solve</h1>
+    <p>Solve all your doubts instantly!</p>
+  </div>
+  <div class="lead-section-screenshots">
+    <DeviceScreen image="home-page/empty/dark/pixel.png" rot="" light="none" />
+    <DeviceScreen image="home-page/contents/light/pixel.png" rot="" dark="none" />
+
+    <!-- Needs to be home-page/empty/dark right here -->
+    <DeviceScreen image="home-page/contents/dark/samsung-s21.png" height="800px" rot="" light="none" />
+    <DeviceScreen image="home-page/contents/light/iphone-13.png" rot="" dark="none" />
+  </div>
+</template>
+
+<style scoped>
+.lead-section-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  h1 {
+    font-size: 3rem;
+    font-weight: 500;
+    line-height: 3rem;
+  }
+
+  p {
+    margin: 0;
+    padding: 0;
+    color: var(--c-text);
+  }
+}
+
+.lead-section-screenshots {
+  display: flex;
+  flex-direction: row;
+  align-items: end;
+  justify-content: center;
+  gap: 5px;
+}
+</style>
