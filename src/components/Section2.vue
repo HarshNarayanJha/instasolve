@@ -8,8 +8,14 @@ import DeviceScreen from "./DeviceScreen.vue";
     <p class="different">With Full Understanding</p>
   </div>
   <div class="section-screenshot">
-    <DeviceScreen image="result-page/dark/iphone-13.png" width="500px" light="none" fetchpriority="low" loading="lazy" />
-    <DeviceScreen image="result-page/light/iphone-13.png" width="500px" dark="none" fetchpriority="low" loading="lazy" />
+    <DeviceScreen
+      image="result-page/dark/iphone-13.png"
+      dark_image="result-page/dark/iphone-13.png"
+      width="500px"
+      light_image="result-page/light/iphone-13.png"
+      fetchpriority="low"
+      loading="lazy"
+    />
   </div>
 </template>
 

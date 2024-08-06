@@ -10,12 +10,19 @@ import DeviceScreen from "./DeviceScreen.vue";
     <p>Solve all your doubts instantly!</p>
   </div>
   <div class="lead-section-screenshots">
-    <DeviceScreen image="home-page/empty/dark/pixel.png" rot="" light="none" />
-    <DeviceScreen image="home-page/contents/light/pixel.png" rot="" dark="none" />
+    <DeviceScreen
+      light_image="home-page/contents/light/pixel.png"
+      dark_image="home-page/empty/dark/pixel.png"
+      image="home-page/empty/dark/pixel.png"
+    />
 
     <!-- Needs to be home-page/empty/dark right here -->
-    <DeviceScreen image="home-page/contents/dark/samsung-s21.png" height="800px" rot="" light="none" />
-    <DeviceScreen image="home-page/contents/light/iphone-13.png" rot="" dark="none" />
+    <DeviceScreen
+      image="home-page/contents/dark/samsung-s21.png"
+      height="800px"
+      light_image="home-page/contents/light/iphone-13.png"
+      dark_image="home-page/contents/dark/samsung-s21.png"
+    />
   </div>
 </template>
 
@@ -43,6 +50,6 @@ import DeviceScreen from "./DeviceScreen.vue";
   flex-direction: row;
   align-items: end;
   justify-content: center;
-  gap: 5px;
+  /* gap: 5px; */
 }
 </style>

@@ -4,8 +4,13 @@ import DeviceScreen from "./DeviceScreen.vue";
 
 <template>
   <div class="section-screenshot">
-    <DeviceScreen image="scan-page/light/samsung-ultra-left.png" width="600px" light="none" fetchpriority="low" loading="lazy" />
-    <DeviceScreen image="scan-page/dark/samsung-ultra-right.png" width="600px" dark="none" fetchpriority="low" loading="lazy" />
+    <DeviceScreen
+      image="scan-page/light/samsung-ultra-left.png"
+      width="600px"
+      light_image="scan-page/dark/samsung-ultra-right.png"
+      dark_image="scan-page/light/samsung-ultra-left.png"
+      fetchpriority="low"
+      loading="lazy" />
   </div>
   <div class="section-text">
     <p>Ever had a doubt? Have no one around who will solve it for you?</p>
