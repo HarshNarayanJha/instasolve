@@ -1,6 +1,6 @@
 # InstaSolve Landing Page
 
-Landing Page for my App Insta Solve made in Vue.js and Vite!
+Landing Page for my App [InstaSolve](https://github.com/HarshNarayanJha/Insta-Solve) made in Vue.js and Vite!
 
 ## Project Setup
 
