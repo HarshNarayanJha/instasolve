@@ -9,10 +9,10 @@ import DeviceScreen from "./DeviceScreen.vue";
   </div>
   <div class="section-screenshot">
     <a href="https://github.com/HarshNarayanJha/Insta-Solve" target="_blank" aria-label="GitHub Repo of Insta Solve"
-      ><img class="dark" src="/src/assets/icons/github-mark-white.png" alt="appicon"
+      ><img class="dark" src="/src/assets/icons/github-mark-white.png" alt="appicon" fetchpriority="low" loading="lazy"
     /></a>
     <a href="https://github.com/HarshNarayanJha/Insta-Solve" target="_blank" aria-label="GitHub Repo of Insta Solve"
-      ><img class="light" src="/src/assets/icons/github-mark.png" alt="appicon"
+      ><img class="light" src="/src/assets/icons/github-mark.png" alt="appicon" fetchpriority="low" loading="lazy"
     /></a>
   </div>
 </template>
