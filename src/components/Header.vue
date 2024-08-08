@@ -3,10 +3,10 @@
 <template>
   <!-- <img src="/src/assets/icons/icon.png" alt="appicon" class="icon" /> -->
   <nav>
-    <span class="first">Insta Solve</span>
-    <span class="">Features</span>
-    <span class="">Usage</span>
-    <span>About</span>
+    <a href="#lead"><span class="first">Insta Solve</span></a>
+    <a href="#features"><span class="">Features</span></a>
+    <a href="#usage"><span class="">Usage</span></a>
+    <a href="#about"><span>About</span></a>
   </nav>
   <!-- <div class="links">
     <a href="https://github.com/HarshNarayanJha/Insta-Solve" target="_blank">
