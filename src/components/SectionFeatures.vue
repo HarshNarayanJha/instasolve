@@ -14,15 +14,18 @@ import DeviceScreen from "./DeviceScreen.vue";
     />
   </div>
   <div class="section-text">
+    <h1>Clear and Simple</h1>
     <p>Ever had a doubt? Have no one around who may solve it for you?</p>
-    <p>Don't worry from now on</p>
-    <h2>Insta Solve</h2>
-    <p>is here!</p>
-
-    <p>Solve any question with <i>just</i> the click of a button</p>
-    <p>Save Answers for later</p>
-    <p>Don't have internet? Save your question and ask it later!</p>
-    <p>Click a photo and ask any question in it, or just type it out!</p>
+    <p>Don't worry from now on <span>Insta Solve</span> is here!</p>
+    <ul>
+      <li>Solve any question with <i>just</i> the click of a button</li>
+      <li>Save Answers for later reference</li>
+      <li>Don't have internet? Save your question and ask it later</li>
+      <li>Answers according to subject and grade</li>
+      <li>Click a photo and ask any question in it, or just type it out</li>
+      <li><span class="inverted">Dark Mode</span> , because obviously</li>
+      <li>... And much more, just try it out</li>
+    </ul>
   </div>
 </template>
 
@@ -38,7 +41,13 @@ import DeviceScreen from "./DeviceScreen.vue";
   justify-content: center;
   align-items: start;
 
-  h2 {
+  h1 {
+    font-size: 2.8rem;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: bold;
+  }
+
+  p span {
     font-size: 1.8rem;
     line-height: 2.5rem;
     display: inline;
@@ -55,8 +64,26 @@ import DeviceScreen from "./DeviceScreen.vue";
     display: inline;
   }
 
-  li {
-    list-style-type: disc;
+  ul {
+    margin-top: 20px;
+  }
+
+  ul li {
+    list-style-type: none;
+    padding-left: 0;
+    padding: 10px 15px;
+    margin: 10px 0;
+    background: var(--color-background-soft);
+    border-radius: 10px;
+    font-size: 1.15rem;
+
+    span.inverted {
+      background: var(--color-background-inverse);
+      color: var(--color-text-inverse);
+      padding: 0 6px;
+      font-weight: 600;
+      border-radius: 5px;
+    }
   }
 }
 
@@ -69,7 +96,7 @@ import DeviceScreen from "./DeviceScreen.vue";
   .section-text {
     align-items: center;
 
-    h1 {
+    span {
       font-size: 1.5rem;
       font-weight: 500;
       line-height: 2.5rem;

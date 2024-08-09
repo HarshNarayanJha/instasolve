@@ -42,6 +42,7 @@ import DeviceScreen from "./DeviceScreen.vue";
     margin: 0;
     padding: 0;
     color: var(--c-text);
+    font-size: 1.2rem;
   }
 }
 

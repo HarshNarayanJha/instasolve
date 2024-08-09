@@ -1,9 +1,10 @@
 <script setup>
 import Header from "./components/Header.vue";
 import SectionLead from "./components/SectionLead.vue";
-import Section1 from "./components/Section1.vue";
-import Section2 from "./components/Section2.vue";
-import Section3 from "./components/Section3.vue";
+import SectionFeatures from "./components/SectionFeatures.vue";
+import SectionUsage from "./components/SectionUsage.vue";
+import SectionAbout from "./components/SectionAbout.vue";
+import SectionFooter from "./components/SectionFooter.vue";
 import Footer from "./components/Footer.vue";
 </script>
 
@@ -18,17 +19,19 @@ import Footer from "./components/Footer.vue";
     </section>
 
     <section class="reverse-mobile" id="features">
-      <Section1 />
+      <SectionFeatures />
     </section>
 
-    <section id="usage"></section>
+    <section id="usage">
+      <SectionUsage />
+    </section>
 
-    <section id="about">
-      <Section2 />
+    <section class="reverse-mobile" id="about">
+      <SectionAbout />
     </section>
 
     <section class="last" id="github">
-      <Section3 />
+      <SectionFooter />
     </section>
 
     <footer>
