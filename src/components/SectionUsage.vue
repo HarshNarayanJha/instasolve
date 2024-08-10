@@ -31,6 +31,7 @@ import DeviceScreen from "./DeviceScreen.vue";
 .section-screenshot {
   width: 35%;
   border-radius: 50%;
+  padding-top: 40px;
 }
 
 .section-text {
@@ -86,7 +87,7 @@ import DeviceScreen from "./DeviceScreen.vue";
     background: var(--color-background-soft);
     border-radius: 10px;
     min-height: 75px;
-    width: 400px;
+    width: min(400px, 85vw);
     display: flex;
     align-items: center;
     font-size: 1.15rem;

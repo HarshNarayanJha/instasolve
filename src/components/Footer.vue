@@ -17,7 +17,7 @@
 div {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-evenly;
   min-width: 150px;
   margin-top: 12px;
 
@@ -47,6 +47,12 @@ img.app-icon {
 @media (max-width: 500px) {
   h2 {
     font-size: 1.2rem;
+  }
+
+  div {
+    h2 {
+      margin-left: 10px;
+    }
   }
 
   p {

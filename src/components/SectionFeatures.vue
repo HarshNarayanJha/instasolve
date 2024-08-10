@@ -47,6 +47,7 @@ import DeviceScreen from "./DeviceScreen.vue";
 .section-screenshot {
   width: 50%;
   border-radius: 50%;
+  padding-top: 40px;
 }
 
 .section-text {
@@ -71,6 +72,7 @@ import DeviceScreen from "./DeviceScreen.vue";
       sans-serif;
     font-weight: bold;
     padding-bottom: 16px;
+    line-height: 3rem;
   }
 
   p span {
@@ -86,7 +88,6 @@ import DeviceScreen from "./DeviceScreen.vue";
   p {
     font-size: 1.2rem;
     color: var(--c-text);
-    display: inline;
   }
 
   ul {
@@ -121,12 +122,10 @@ import DeviceScreen from "./DeviceScreen.vue";
   .section-text {
     align-items: center;
 
-    span {
-      font-size: 1.5rem;
-      font-weight: 500;
-      line-height: 2.5rem;
-      display: block;
-      padding: 0 15px;
+    p span {
+      font-size: 1.8rem;
+      display: inline-block;
+      font-weight: 900;
     }
   }
 }

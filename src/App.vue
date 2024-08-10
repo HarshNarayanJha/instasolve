@@ -113,8 +113,14 @@ footer {
 }
 
 @media (max-width: 500px) {
+  section {
+    margin: 60px 0;
+    padding-top: 50px;
+  }
+
   footer {
-    display: none;
+    flex-direction: column;
+    padding: 0;
   }
 }
 </style>

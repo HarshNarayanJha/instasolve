@@ -4,7 +4,8 @@ import DeviceScreen from "./DeviceScreen.vue";
 
 <template>
   <div class="section-text">
-    <h1>Get The App</h1>
+    <a href="https://github.com/HarshNarayanJha/Insta-Solve" target="_blank" aria-label="GitHub Repo of Insta Solve">
+      <h1>Get The App</h1></a>
     <h1 class="different">Or star it on GitHub</h1>
   </div>
   <div class="section-screenshot">
@@ -58,7 +59,7 @@ import DeviceScreen from "./DeviceScreen.vue";
   align-items: center;
 
   a {
-    margin: 10px;
+    margin: 0 10px;
     padding: 0 10px;
   }
 
