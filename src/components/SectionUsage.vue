@@ -5,12 +5,14 @@ import DeviceScreen from "./DeviceScreen.vue";
 <template>
   <div class="section-text">
     <h1>Easy To Use</h1>
-    <p>Your Answers are just one click away...</p>
+    <p>Your Answers are just one click away</p>
     <ul>
-      <li>Start asking by tapping the Scan Button</li>
-      <li>Either snap (or pick) a photo or type the question in the text field</li>
-      <li>Tap the solve button to get the solution</li>
-      <li>Read the Solution, save it, or share it</li>
+      <li><span class="icon fa6-solid--dice-one"></span>Start asking by tapping the Scan Button</li>
+      <li>
+        <span class="icon fa6-solid--dice-two"></span>Either snap (or pick) a photo <br> or type the question in the text field
+      </li>
+      <li><span class="icon fa6-solid--dice-three"></span>Tap the solve button to get the solution</li>
+      <li><span class="icon fa6-solid--dice-four"></span>Read the Solution, save it, or share it</li>
     </ul>
   </div>
   <div class="section-screenshot">
@@ -52,6 +54,7 @@ import DeviceScreen from "./DeviceScreen.vue";
       "Helvetica Neue",
       sans-serif;
     font-weight: bold;
+    padding-bottom: 16px;
   }
 
   p span {
@@ -72,7 +75,7 @@ import DeviceScreen from "./DeviceScreen.vue";
   }
 
   ul {
-    margin-top: 20px;
+    margin-top: 5px;
   }
 
   ul li {

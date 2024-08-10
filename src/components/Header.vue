@@ -1,18 +1,12 @@
 <script setup></script>
 
 <template>
-  <!-- <img src="/src/assets/icons/icon.png" alt="appicon" class="icon" /> -->
   <nav>
-    <a href="#lead"><span class="first">Insta Solve</span></a>
+    <a href="#"><span class="first">Insta Solve</span></a>
     <a href="#features"><span class="">Features</span></a>
     <a href="#usage"><span class="">Usage</span></a>
     <a href="#about"><span>About</span></a>
   </nav>
-  <!-- <div class="links">
-    <a href="https://github.com/HarshNarayanJha/Insta-Solve" target="_blank">
-      <img alt="GitHub Repo stars" src="https://img.shields.io/github/stars/HarshNarayanJha/Insta-Solve?style=social" />
-    </a>
-  </div> -->
 </template>
 
 <style scoped>

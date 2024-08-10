@@ -18,13 +18,27 @@ import DeviceScreen from "./DeviceScreen.vue";
     <p>Ever had a doubt? Have no one around who may solve it for you?</p>
     <p>Don't worry from now on <span>Insta Solve</span> is here!</p>
     <ul>
-      <li>Solve any question with <i>just</i> the click of a button</li>
-      <li>Save Answers for later reference</li>
-      <li>Don't have internet? Save your question and ask it later</li>
-      <li>Answers according to subject and grade</li>
-      <li>Click a photo and ask any question in it, or just type it out</li>
-      <li><span class="inverted">Dark Mode</span> , because obviously</li>
-      <li>... And much more, just try it out</li>
+      <li>
+        <span class="icon ic--round-home-work"></span>
+        Solve any question with <i>just</i> the tap of a button. <br />Click a photo and ask any question in it, or just type
+        it out
+      </li>
+      <li><span class="icon ic--round-bookmark-added"></span>Save Answers for later reference</li>
+      <li>
+        <span class="icon ic--round-signal-wifi-off inline"></span>
+        <span class="icon ic--round-signal-cellular-nodata inline"></span><br />
+        Don't have internet? Save your question to ask it later
+      </li>
+      <li>
+        <span class="icon fluent--book-letter-24-filled inline"></span>
+        <span class="icon fluent--video-person-star-24-filled inline"></span>
+        <br />Get answers according to subject and grade
+      </li>
+      <li>
+        <span class="inverted"><span class="icon ic--round-dark-mode inline mr-0"></span>Dark Mode</span> because
+        obviously...
+      </li>
+      <li>... And much more, just try it out ✨</li>
     </ul>
   </div>
 </template>
@@ -43,8 +57,20 @@ import DeviceScreen from "./DeviceScreen.vue";
 
   h1 {
     font-size: 2.8rem;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family:
+      system-ui,
+      -apple-system,
+      BlinkMacSystemFont,
+      "Segoe UI",
+      Roboto,
+      Oxygen,
+      Ubuntu,
+      Cantarell,
+      "Open Sans",
+      "Helvetica Neue",
+      sans-serif;
     font-weight: bold;
+    padding-bottom: 16px;
   }
 
   p span {
@@ -60,12 +86,11 @@ import DeviceScreen from "./DeviceScreen.vue";
   p {
     font-size: 1.2rem;
     color: var(--c-text);
-    text-align: center;
     display: inline;
   }
 
   ul {
-    margin-top: 20px;
+    margin-top: 5px;
   }
 
   ul li {
@@ -80,7 +105,7 @@ import DeviceScreen from "./DeviceScreen.vue";
     span.inverted {
       background: var(--color-background-inverse);
       color: var(--color-text-inverse);
-      padding: 0 6px;
+      padding: 2px 6px;
       font-weight: 600;
       border-radius: 5px;
     }

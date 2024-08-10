@@ -2,7 +2,7 @@
 
 <template>
   <div>
-    <img src="/src/assets/icons/icon.png" alt="appicon" class="icon" />
+    <img src="/src/assets/icons/icon.png" alt="appicon" class="app-icon" />
     <h2>Insta Solve</h2>
   </div>
   <div>
@@ -40,7 +40,7 @@ a {
   color: var(--c-text);
 }
 
-img.icon {
+img.app-icon {
   max-width: 30px;
 }
 

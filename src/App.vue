@@ -59,8 +59,10 @@ section {
 
   min-height: 78svh;
 
-  margin: 40px 0;
+  margin: 120px 0;
+  margin-top: 0;
   padding: 0 20px;
+  padding-top: 60px;
 }
 
 section.lead {
@@ -69,6 +71,7 @@ section.lead {
   justify-items: center;
   align-items: center;
   grid-gap: 3rem;
+  padding-top: 0;
 }
 
 section.last {
