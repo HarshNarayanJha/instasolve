@@ -5,5 +5,8 @@ import App from "./App.vue"
 
 createApp(App).mount("#app")
 
-const factor = window.devicePixelRatio == 1 ? 1 : 1.6 / window.devicePixelRatio
+let factor = 1
+if (window.devicePixelRatio == 2) {
+  factor = 1.6 / window.devicePixelRatio
+}
 document.querySelector("html").style.zoom = factor
