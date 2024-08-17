@@ -3,6 +3,7 @@ import Header from "./components/Header.vue";
 import SectionLead from "./components/SectionLead.vue";
 import SectionFeatures from "./components/SectionFeatures.vue";
 import SectionUsage from "./components/SectionUsage.vue";
+import SectionPrivacy from "./components/SectionPrivacy.vue";
 import SectionAbout from "./components/SectionAbout.vue";
 import SectionFooter from "./components/SectionFooter.vue";
 import Footer from "./components/Footer.vue";
@@ -24,6 +25,10 @@ import Footer from "./components/Footer.vue";
 
     <section id="usage">
       <SectionUsage />
+    </section>
+
+    <section id="privacy">
+      <SectionPrivacy />
     </section>
 
     <section class="reverse-mobile" id="about">
@@ -84,6 +89,10 @@ section.last {
 
   margin: 20px 0;
   padding: 0 10px;
+}
+
+section#privacy {
+  min-height: 15svh;
 }
 
 footer {
