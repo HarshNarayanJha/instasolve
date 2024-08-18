@@ -7,7 +7,7 @@ import DeviceScreen from "./DeviceScreen.vue";
   <div class="lead-section-text">
     <AppIcon />
     <h1>Insta Solve</h1>
-    <p>Solve all your doubts instantly!</p>
+    <p>Doubts are Fun</p>
   </div>
   <div class="lead-section-screenshots">
     <DeviceScreen

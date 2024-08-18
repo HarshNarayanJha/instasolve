@@ -5,6 +5,7 @@
     <a href="#"><span class="first">Insta Solve</span></a>
     <a href="#features"><span class="">Features</span></a>
     <a href="#usage"><span class="">Usage</span></a>
+    <a href="#privacy"><span class="">Privacy</span></a>
     <a href="#about"><span>About</span></a>
   </nav>
 </template>
